@@ -107,7 +107,7 @@ a {
 }
 
 .hero-titulo {
-  margin-left: 80px;
+  margin-left: 120px;
   line-height: 0.9;
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@ a {
 }
 
 .hero-subtitulo {
-  margin: 30px 0 0 82px;
+  margin: 30px 0 0 120px;
   max-width: 500px;
   font-size: 1rem;
   line-height: 1.7;
@@ -129,7 +129,7 @@ a {
 }
 
 .hero-botoes {
-  margin: 25px 0 0 82px;
+  margin: 25px 0 0 120px;
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
@@ -209,10 +209,20 @@ a {
 
 .sobre-imagens img {
   width: 100%;
-  height: 190px;
-  object-fit: cover;
+  height: 220px;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
   display: block;
   border: 0;
+}
+
+.sobre-imagens img:nth-child(3) {
+  margin-top: 24px;
+}
+
+.sobre-imagens img:nth-child(2) {
+  margin-top: 24px;
 }
 
 .sobre-conteudo h2 {
