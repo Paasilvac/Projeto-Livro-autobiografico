@@ -197,6 +197,7 @@ a {
   gap: 60px;
   padding: 80px 90px;
   background: #f2f2f2;
+  align-items: start;
 }
 
 .sobre-imagens {
@@ -207,9 +208,11 @@ a {
 }
 
 .sobre-imagens img {
-  height: 210px;
+  width: 100%;
+  height: 190px;
   object-fit: cover;
-  border: 1px solid #d7d7d7;
+  display: block;
+  border: 0;
 }
 
 .sobre-conteudo h2 {
@@ -238,7 +241,6 @@ a {
   font-size: 1rem;
   line-height: 1.9;
 }
-
 .volumes {
   display: grid;
   grid-template-columns: 160px 1fr;
@@ -1065,173 +1067,80 @@ a {
   padding: 24px;
 }
 
-@media (max-width: 980px) {
-  .blog-home-section,
-  .blog-page,
-  .post-layout,
-  .post-hero,
-  .blog-page-hero {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  .blog-home-grid,
-  .blog-page-grid,
-  .post-layout {
+@media (max-width: 768px) {
+  .sobre {
     grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 20px;
   }
 
-  .blog-post-card-destaque {
-    grid-column: span 1;
+  .sobre-imagens {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 
-  .post-imagem {
-    height: 240px;
+  .sobre-imagens img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .sobre-conteudo h2 {
+    font-size: 2.6rem;
+    line-height: 0.92;
+  }
+
+  .sobre-conteudo h3 {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+  }
+
+  .sobre-textos {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .sobre-textos p {
+    font-size: 0.96rem;
+    line-height: 1.75;
   }
 }
 
 @media (max-width: 1024px) {
-  .hero,
-  .sobre,
-  .volumes,
-  .compra,
-  .contato-topo,
-  .post-layout,
-  .blog-page-grid,
-  .blog-home-grid,
-  .sobre-textos,
-  .contato-info {
-    grid-template-columns: 1fr !important;
-  }
-
-  .titulo-lateral,
-  .hero-direita,
-  .hero-vertical {
-    display: none !important;
-  }
-
-  .topo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 18px 20px;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .hero {
-    padding: 40px 20px;
-    min-height: auto;
-  }
-
-  .hero-esquerda,
-  .hero-centro,
-  .hero-subtitulo,
-  .hero-botoes,
-  .hero-titulo {
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: left;
-  }
-
-  .hero-titulo span {
-    font-size: clamp(2.2rem, 10vw, 4rem);
-  }
-
-  .hero-centro img {
-    max-width: 280px;
-    margin: 20px auto 0;
-  }
-
-  .sobre,
-  .textos,
-  .blog-home-section,
-  .blog-page,
-  .post-layout,
-  .post-hero,
-  .blog-page-hero,
-  .compra-conteudo,
-  .redes-faixa {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+  .sobre {
+    grid-template-columns: 220px 1fr;
+    gap: 34px;
+    padding: 50px 28px;
+    align-items: start;
   }
 
   .sobre-imagens {
-    flex-direction: row;
-    gap: 10px;
-    overflow-x: auto;
-    max-width: 100%;
+    flex-direction: column;
+    max-width: 220px;
   }
 
   .sobre-imagens img {
-    min-width: 180px;
-    height: 180px;
+    height: 170px;
   }
 
-  .grid-volumes,
-  .compra-conteudo,
-  .blog-page-grid,
-  .blog-home-grid {
-    display: grid;
-    grid-template-columns: 1fr !important;
+  .sobre-textos {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 28px;
   }
 
-  .item-texto {
-    grid-template-columns: 1fr !important;
-  }
-
-  .thumb-texto {
-    height: 60px;
-  }
-
-  .blog-post-card-destaque {
-    grid-column: span 1 !important;
-  }
-
-  .post-imagem {
-    height: 220px;
-  }
-
-  .mapa-box iframe {
-    height: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .menu a {
-    font-size: 0.85rem;
-  }
-
-  .logo,
-  .marca-rodape {
-    font-size: 1.6rem;
-  }
-
-  .blog-post-content h2,
-  .texto-info h3,
-  .blog-home-card h3 {
-    font-size: 1.4rem;
-  }
-
-  .post-hero h1,
-  .blog-page-hero h1,
-  .blog-home-header h2,
-  .faixa-topo h2,
   .sobre-conteudo h2 {
-    font-size: 2rem;
-    line-height: 1.05;
+    font-size: 3.2rem;
   }
 
-  .compra-box h3 {
-    font-size: 1.5rem;
+  .sobre-conteudo h3 {
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .sobre-textos p {
+    font-size: 0.98rem;
+    line-height: 1.8;
   }
 }
