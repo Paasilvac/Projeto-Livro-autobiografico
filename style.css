@@ -903,6 +903,27 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .blog-home-grid,
+  .blog-grid,
+  .blog-page-grid {
+    grid-auto-rows: auto;
+    align-items: start;
+  }
+
+  .blog-home-card,
+  .blog-card,
+  .blog-post-card {
+    min-height: auto;
+    height: auto;
+    overflow: visible;
+  }
+
+  .blog-section,
+  .blog-page,
+  .post-layout {
+    min-height: auto;
+  }
+
   .blog-post-card-destaque {
     grid-column: auto;
   }
