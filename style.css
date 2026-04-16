@@ -1327,3 +1327,45 @@ a {
     line-height: 1.8;
   }
 }
+
+@media (max-width: 768px) {
+  .blog-section,
+  .blog-home-section,
+  .blog-page {
+    min-height: auto !important;
+  }
+
+  .blog-home-grid,
+  .blog-grid,
+  .blog-page-grid {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: max-content;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .blog-home-card,
+  .blog-card,
+  .blog-post-card {
+    min-height: unset !important;
+    height: auto !important;
+    overflow: visible !important;
+    align-self: start;
+  }
+
+  .blog-post-card-destaque {
+    grid-column: auto !important;
+  }
+
+  .sobre-imagens {
+    align-items: stretch;
+  }
+
+  .sobre-imagens img {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+  }
+}
