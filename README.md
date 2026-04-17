@@ -1,1 +1,1 @@
-Site criado para apresentação de livros autobiográficos com "blog" para textos, desenvolvido em HTML, CSS e JS, hospedado via GitHub Pages.
+Site institucional para apresentação de obra autobiográfica em três volumes, com área de textos (blog), disponibilização de PDFs e integração com link de pagamento. Desenvolvido em HTML, CSS e JavaScript, com layout responsivo e publicação via GitHub Pages.
